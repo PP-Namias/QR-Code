@@ -10,7 +10,7 @@
     <meta property="og:url" content="https://pp-namias.github.io/UCC-Student-Portal/">
     <meta property="og:type" content="website">
     <meta property="og:title" content="QR Code Generator"/> 
-    <meta property="og:image" content="https://pp-namias.github.io/UCC-Student-Portal/assets/UCC_Student_Portal.png"/>
+    <meta property="og:image" content="https://pp-namias.github.io/UCC-Student-Portal/img/UCC_Student_Portal.png"/>
     <meta property="og:image:alt" content="UCC | Student Portal">
     <meta property="og:description" content="The University of Caloocan City is a public-type local university established in 1971 and formerly called Caloocan City Community College and Caloocan City Polytechnic College."/>
     <meta name="twitter:card" content="summary_large_image">
@@ -18,11 +18,11 @@
     <meta property="twitter:url" content="https://pp-namias.github.io/UCC-Student-Portal/">
     <meta name="twitter:title" content="UCC | Student Portal">
     <meta name="twitter:description" content="The University of Caloocan City is a public-type local university established in 1971 and formerly called Caloocan City Community College and Caloocan City Polytechnic College. ">
-    <meta name="twitter:image" content="https://pp-namias.github.io/UCC-Student-Portal/assets/UCC_Student_Portal.png">
+    <meta name="twitter:image" content="https://pp-namias.github.io/UCC-Student-Portal/img/UCC_Student_Portal.png">
 
     <title>UCC | Student Portal</title>
 
-    <link rel = "icon" href = "assets/ucc_logo.ico" type = "image/x-icon">
+    <link rel = "icon" href = "img/ucc_logo.ico" type = "image/x-icon">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,10 +35,28 @@
     <div class="portal">
         <div class="portal__wrapper">
             <form action="#" class="portal__wrapper__form">
-
+                <div class="portal__wrapper__form__wrapper">
+                    <div class="portal__wrapper__form__wrapper__title">
+                        <h1><span>QR Code</span> Generator</h1>
+                        <p>Paste a url or enter text to create QR code</p>
+                    </div>
+                    <div class="portal__wrapper__form__wrapper__field">
+                        <div class="portal__wrapper__form__wrapper__field__input form">
+                            <input type="text" id="studno" class="js-input" spellcheck="false">
+                            <label for="studno">Enter URL here</label>
+                        </div>
+                        <div class="portal__wrapper__form__wrapper__field__button form">
+                            <button>Generate QR Code</button>
+                        </div>
+                        <div class="qr-code">
+                            <img src="" alt="qr-code">
+                        </div>
+                        <p id="terms">Made with ❤ by <a href="https://github.com/PP-Namias">PP Namias</a></p>
+                    </div>
+                </div>
             </form>
             <div class="portal__wrapper__hero">
-                <img src="assets/ucc_logo.png" alt="">
+                <img src="img/ucc_logo.png" alt="">
             </div>
         </div>
     </div>
