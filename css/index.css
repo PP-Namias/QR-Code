@@ -178,7 +178,17 @@ body {
   color: #fff;
   cursor: pointer;
 }
+.portal__wrapper__form__wrapper__field__button__extra {
+  align-items:center;
+}
+.portal__wrapper__form__wrapper__field__button__extra button{
+  width: 49.4%;
+  background: #3a37ff;
+  padding: 15px;
+  color: #fff;
+  cursor: pointer;
 
+}
 .qr-code {
   display: flex;
   align-items: center;
@@ -229,7 +239,7 @@ body {
   display: grid;
   place-items: center;
   width: 100%;
-  background: url(../img/bga.jpg) no-repeat;
+  background: url(../img/asd.jpg) no-repeat;
   background-size: cover;
   border-radius: 0 0 0 100px;
   position: relative;
