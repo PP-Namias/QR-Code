@@ -64,17 +64,20 @@ a {
 
 body {
   font-family: "Poppins", sans-serif;
+  background: rgb(24, 24, 24);
 }
 
 .portal__wrapper {
   min-height: 100vh;
   display: flex;
+  background: rgb(24, 24, 24);
+
 }
 .portal__wrapper__form {
   display: grid;
   place-items: center;
   width: 100%;
-  background: #fff;
+  background: rgb(24, 24, 24);
   border-radius: 0 100px 0 0;
   padding: 50px 20px 0;
 }
@@ -88,9 +91,10 @@ body {
 .portal__wrapper__form__wrapper__title h1 {
   font-size: clamp(2rem, 1.375rem + 2vw, 2.5rem);
   margin-left: 10px;
+  color: #fff;
 }
 .portal__wrapper__form__wrapper__title h1 span {
-  color: #ff5e00;
+  color: #3a37ff;
 }
 .portal__wrapper__form__wrapper__title p {
   margin-left: 10px;
@@ -102,7 +106,7 @@ body {
   position: absolute;
   width: 5px;
   height: 100%;
-  background: #ff5e00;
+  background: #3a37ff;
   left: 0;
 }
 .portal__wrapper__form__wrapper__field {
@@ -123,10 +127,10 @@ body {
   transition: 0.3s ease-in-out;
 }
 .portal__wrapper__form__wrapper__field__input input:focus {
-  outline: 2px solid #ff5e00;
+  outline: 2px solid #3a37ff;
 }
 .portal__wrapper__form__wrapper__field__input input:focus ~ label {
-  color: #ff5e00;
+  color: #3a37ff;
 }
 .portal__wrapper__form__wrapper__field__input label {
   position: absolute;
@@ -152,7 +156,7 @@ body {
 }
 .portal__wrapper__form__wrapper__field__input #forgot-pass {
   float: right;
-  color: #ff5e00;
+  color: #3a37ff;
   font-size: 0.9rem;
   margin: 3px 0 7px;
 }
@@ -169,7 +173,7 @@ body {
 }
 .portal__wrapper__form__wrapper__field__button button {
   width: 100%;
-  background: #ff5e00;
+  background: #3a37ff;
   padding: 15px;
   color: #fff;
   cursor: pointer;
@@ -189,8 +193,7 @@ body {
 }
 
 .qr-code img {
-  border-radius: 8px;
-  border: 1px solid #ccc;
+  border: 2px solid #ccc;
 }
 
 @media (max-width: 430px) {
@@ -217,15 +220,16 @@ body {
 }
 .portal__wrapper__form__wrapper__field #terms {
   font-size: 0.9rem;
+  color: #fff;
 }
 .portal__wrapper__form__wrapper__field #terms a {
-  color: #ff5e00;
+  color: #3a37ff;
 }
 .portal__wrapper__hero {
   display: grid;
   place-items: center;
   width: 100%;
-  background: url(../img/ucc_bg.jpg) no-repeat;
+  background: url(../img/bga.jpg) no-repeat;
   background-size: cover;
   border-radius: 0 0 0 100px;
   position: relative;
@@ -235,7 +239,7 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: #ff5e00;
+  background: #3a37ff;
   top: 0;
   left: -100px;
   z-index: -1;
