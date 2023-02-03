@@ -275,4 +275,21 @@ body {
     left: 0;
     top: 125px;
   }
-}/*# sourceMappingURL=index.css.map */
+}
+
+#particles-js {
+    height: 100vh;
+    width: 100vw;
+}
+
+#particles-js canvas {
+    position: absolute;
+    z-index: 1;
+}
+
+.background {
+  background-size: cover;
+  background-blend-mode: darken;
+  background-attachment: fixed;
+  background-position: center center;
+}

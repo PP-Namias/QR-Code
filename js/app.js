@@ -1,53 +1,114 @@
-const parent = document.querySelectorAll('.js-input');
+particlesJS('particles-js',
+  
+{
+    "particles": {
+      "number": {
+        "value": 361,
+        "density": {
+          "enable": true,
+          "value_area": 962.0472365193136
+        }
+      },
+      "color": {
+        "value": "#ffffff"
+      },
+      "shape": {
+        "type": "circle",
+        "stroke": {
+          "width": 0,
+          "color": "#000000"
+        },
+        "polygon": {
+          "nb_sides": 5
+        },
+        "image": {
+          "src": "img/github.svg",
+          "width": 100,
+          "height": 100
+        }
+      },
+      "opacity": {
+        "value": 1,
+        "random": true,
+        "anim": {
+          "enable": true,
+          "speed": 1,
+          "opacity_min": 0,
+          "sync": false
+        }
+      },
+      "size": {
+        "value": 2,
+        "random": true,
+        "anim": {
+          "enable": false,
+          "speed": 4,
+          "size_min": 0.3,
+          "sync": false
+        }
+      },
+      "line_linked": {
+        "enable": false,
+        "distance": 150,
+        "color": "#ffffff",
+        "opacity": 0.4,
+        "width": 1
+      },
+      "move": {
+        "enable": true,
+        "speed": 1,
+        "direction": "none",
+        "random": true,
+        "straight": false,
+        "out_mode": "out",
+        "bounce": false,
+        "attract": {
+          "enable": false,
+          "rotateX": 600,
+          "rotateY": 600
+        }
+      }
+    },
+    "interactivity": {
+      "detect_on": "canvas",
+      "events": {
+        "onhover": {
+          "enable": true,
+          "mode": "bubble"
+        },
+        "onclick": {
+          "enable": true,
+          "mode": "repulse"
+        },
+        "resize": true
+      },
+      "modes": {
+        "grab": {
+          "distance": 400,
+          "line_linked": {
+            "opacity": 1
+          }
+        },
+        "bubble": {
+          "distance": 250,
+          "size": 0,
+          "duration": 2,
+          "opacity": 0,
+          "speed": 3
+        },
+        "repulse": {
+          "distance": 400,
+          "duration": 0.4
+        },
+        "push": {
+          "particles_nb": 4
+        },
+        "remove": {
+          "particles_nb": 2
+        }
+      }
+    },
+    "retina_detect": true
+  }
 
-window.addEventListener('pageshow', () => {
-    parent.forEach(e => {
-
-        e.addEventListener('focus', (e) => {
-            focusState(e.target);
-        })
-        e.addEventListener('blur', (e) => {
-            blurState(e.target);
-        })
-
-        focusState(e);
-        blurState(e);
-    });     
-})
-
-function focusState(e){
-    parentEl = e.parentElement;
-    parentEl.classList.add('focus');
-}
-
-function blurState(e){
-    parentEl = e.parentElement;
-    if(!e.value){
-        parentEl.classList.remove('focus');
-    }
-}
-
-const wrapper = document.querySelector(".portal__wrapper__form__wrapper__field");
-    qrInput = wrapper.querySelector(".form input"),
-    generateBtn = wrapper.querySelector(".form button"),
-    qrImg = wrapper.querySelector(".qr-code img");
-let preValue;
-
-generateBtn.addEventListener("click", () => {
-    let qrValue = qrInput.value.trim();
-    if (!qrValue || preValue === qrValue) return;
-    preValue = qrValue;
-    generateBtn.innerText = "Generating QR Code...";
-    qrImg.src = `https://api.qrserver.com/v1/create-qr-code/?size=200x200&data=${qrValue}`;
-    qrImg.addEventListener("load", () => {
-        wrapper.classList.add("active");
-        generateBtn.innerText = "Generate QR Code";
-    });
-});
-
-qrInput.addEventListener("keyup", () => {
-    if (!qrInput.value.trim()) {
-        wrapper.classList.remove("active");
-        preValue = "";
-    }
-});
+);
