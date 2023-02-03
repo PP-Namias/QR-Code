@@ -27,11 +27,6 @@ function blurState(e){
     }
 }
 
-
-
-
-
-
 const wrapper = document.querySelector(".portal__wrapper__form__wrapper__field");
     qrInput = wrapper.querySelector(".form input"),
     generateBtn = wrapper.querySelector(".form button"),
